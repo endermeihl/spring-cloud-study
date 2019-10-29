@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: eureka-server
+server:
+  port: 1001
+  servlet:
+    context-path: /
+eureka:
+  instance:
+    appname: localhost
+  client:
+    register-with-eureka: false
+    fetch-registry: false
+    serviceUrl:
+      #eureka server接口,/eureka/为内部固定服务地址,集群逗号分隔 http://eureka-peer2:9991/eureka/,http://eureka-peer3:9991/eureka/
+      defaultZone: http://localhost:1001/eureka/
