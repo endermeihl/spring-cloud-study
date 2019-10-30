@@ -19,6 +19,7 @@ public class ConsumerService {
     }
 
     public String fallback() {
+        System.out.println("11");
         return "fallback";
     }
 
