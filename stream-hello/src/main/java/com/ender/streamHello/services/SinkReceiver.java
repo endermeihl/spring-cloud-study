@@ -15,8 +15,8 @@ public class SinkReceiver {
     private static Logger logger = LoggerFactory.getLogger(SinkReceiver.class);
 
     @StreamListener(Processor.INPUT)
-    public synchronized <T> void listen_average(GenericMessage<T> msg) {
-        System.out.println("Order Received For Average : " + msg);
+    public void listen_average(String payload) {
+        logger.debug("Order Received For Average : " + payload);
     }
 
 }

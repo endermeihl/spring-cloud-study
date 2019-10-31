@@ -11,3 +11,7 @@ spring:
     port: 5672
     username: root
     password: root
+
+    virtual-host: my_vhost
+logging:
+  config: classpath:conf/log4j2-dev.xml

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Component;
 @Component
 public interface CustomSink extends Sink {
 
-    String INPUT = "input3";
+    String INPUT = "input";
 
 
     @Input(INPUT)
